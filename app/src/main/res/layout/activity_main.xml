@@ -1,23 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="96dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:stretchColumns="0,1"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
 
-    <GridView
-
-        android:id="@+id/gridView"
-        android:layout_width="100dp"
+    <TableRow
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:columnWidth="90dp"
-        android:gravity="center_vertical"
-        android:numColumns="1"
-        android:stretchMode="columnWidth"
-        android:layout_row="0"
-        android:layout_column="0" />
+        android:layout_marginBottom="16dp">
 
-</GridLayout>
+        <TextView
+            android:id="@+id/tvEdu"
+            android:layout_margin="8dp"
+            android:drawableTop="@drawable/course_icon"
+            android:gravity="center"
+            android:text="@string/main_menu_course"/>
+
+        <TextView
+            android:id="@+id/tvMap"
+            android:layout_margin="8dp"
+            android:drawableTop="@drawable/maps_icon"
+            android:gravity="center"
+            android:text="@string/main_menu_maps"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvNew"
+            android:layout_margin="8dp"
+            android:drawableTop="@drawable/news_icon"
+            android:gravity="center"
+            android:text="@string/main_menu_news"/>
+
+        <TextView
+            android:id="@+id/tvSocial"
+            android:layout_margin="8dp"
+            android:drawableTop="@drawable/social_icon"
+            android:gravity="center"
+            android:text="@string/main_menu_social"/>
+
+    </TableRow>
+
+</TableLayout>
