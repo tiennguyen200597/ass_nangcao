@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Hỗ TRỢ HỌC TẬP"
+        android:textColor="#3366CC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/btnInsertClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:onClick="themLop"
+        android:text="Thêm lớp"
+        />
+
+    <Button
+
+        android:textStyle="bold"
+        android:id="@+id/btnShowListClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="xemDanhSachLop"
+        android:text="danh sách lớp"
+        />
+
+    <Button
+
+        android:textStyle="bold"
+        android:id="@+id/btnInsertStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="quanLySinhVien"
+        android:text="Quản lý sv"
+        />
+    <Button
+
+        android:textStyle="bold"
+        android:id="@+id/btnInsertMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="addmonhoc"
+        android:text="Thêm môn học"
+        />
+    <Button
+
+        android:textStyle="bold"
+        android:id="@+id/btnxemmon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="xemmon"
+        android:text="Xem môn học"
+        />
+
+    <Button
+
+        android:textStyle="bold"
+        android:id="@+id/btnResetDatbase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="reasetDatabase"
+        android:text="Xóa toàn bộ dữ liệu "
+        />
+
+</LinearLayout>
