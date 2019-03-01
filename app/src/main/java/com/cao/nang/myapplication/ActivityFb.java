@@ -85,7 +85,7 @@ private ShareDialog shareDialog;
              btnShare.setOnClickListener(new View.OnClickListener() {
                  @Override
                  public void onClick(View v) {
-                     getPhotos();
+                     /*getPhotos();*/
                  }
              });
              LoginManager.getInstance().registerCallback(callbackManager,
@@ -105,7 +105,7 @@ private ShareDialog shareDialog;
                              // App code
                          }
                      });
-             getPhotos();
+            /* getPhotos();*/
              getShareLink();
          }
      });
@@ -139,7 +139,7 @@ private ShareDialog shareDialog;
                 .setContentUrl(Uri.parse("https://developers.facebook.com"))
                 .build();
     }
-    private void getPhotos(){
+   /* private void getPhotos(){
         Bitmap image = BitmapFactory.decodeResource(getResources(),R.id.img);
 
         SharePhoto photo = new SharePhoto.Builder().setBitmap(image)
@@ -147,5 +147,5 @@ private ShareDialog shareDialog;
         SharePhotoContent content = new SharePhotoContent.Builder()
                 .addPhoto(photo)
                 .build();
-    }
+    }*/
 }

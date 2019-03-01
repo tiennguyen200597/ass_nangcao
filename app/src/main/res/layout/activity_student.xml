@@ -17,7 +17,6 @@
         android:textStyle="bold" />
 
     <Button
-
         android:id="@+id/btnInsertClass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,11 +26,10 @@
         android:textStyle="bold"
         android:gravity="center"
         android:onClick="themLop"
-        android:text="Thêm lớp"
+        android:text="Thêm Môn Học"
         />
 
-    <Button
-
+    <!--<Button
         android:textStyle="bold"
         android:id="@+id/btnShowListClass"
         android:layout_width="match_parent"
@@ -42,7 +40,7 @@
         android:gravity="center"
         android:onClick="xemDanhSachLop"
         android:text="danh sách lớp"
-        />
+        />-->
 
     <Button
 
@@ -68,7 +66,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:onClick="addmonhoc"
-        android:text="Thêm môn học"
+        android:text="Thêm Lịch Học"
         />
     <Button
 
@@ -81,7 +79,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:onClick="xemmon"
-        android:text="Xem môn học"
+        android:text="Xem Thời Khóa Biểu"
         />
 
     <Button
@@ -95,7 +93,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:onClick="reasetDatabase"
-        android:text="Xóa toàn bộ dữ liệu "
+        android:text="Xóa dữ liệu "
         />
 
 </LinearLayout>

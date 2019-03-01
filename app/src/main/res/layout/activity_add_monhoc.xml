@@ -11,7 +11,7 @@
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:text="thêm môn học"
+        android:text="Thêm Lịch Học"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#8B0000"
         android:textSize="20sp"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="5dp"
-                android:text="Lớp:"
+                android:text="Môn"
                 android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Mã môn học:"
+                android:text="Ngày học:"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="tên môn học:"
+                android:text="Ca:"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold" />
 
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:onClick="addMonhoc"
-                android:text="Thêm thêm môn học"
+                android:text="Thêm lịch học"
                 android:textStyle="bold" />
         </TableRow>
     </TableLayout>
