@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:background="@color/colorPrimary"
-        android:text="Thêm lớp"
+        android:text="Thêm Môn Học"
         android:textColor="#f000"
         android:textSize="20dp" />
     <TableLayout
@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
-                android:text="Mã lớp:"
+                android:text="Mã Môn:"
                 android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
-                android:text="Tên lớp:"
+                android:text="Tên Môn:"
                 android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="createClass"
                 android:textStyle="bold"
-                android:text="Thêm lớp" />
+                android:text="Thêm" />
         </TableRow>
     </TableLayout>
 </LinearLayout>

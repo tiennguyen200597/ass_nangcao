@@ -1,6 +1,5 @@
 package com.cao.nang.myapplication;
 
-import android.app.Activity;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +17,7 @@ public class AddLayer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_layer);
+        setContentView(R.layout.activity_add_class);
         init();
     }
     public void init() {

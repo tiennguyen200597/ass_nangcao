@@ -36,7 +36,7 @@ public class addMonhoc extends AppCompatActivity implements AdapterView.OnItemSe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_monhoc);
+        setContentView(R.layout.activity_add_lichhoc);
         init();
         loadDataClass();
     }
