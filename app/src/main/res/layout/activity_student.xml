@@ -53,7 +53,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:onClick="quanLySinhVien"
-        android:text="Quản lý sv"
+        android:text="Thêm Lịch Thi"
         />
     <Button
 
@@ -82,7 +82,7 @@
         android:text="Xem Thời Khóa Biểu"
         />
 
-    <Button
+    <!--<Button
 
         android:textStyle="bold"
         android:id="@+id/btnResetDatbase"
@@ -94,6 +94,6 @@
         android:gravity="center"
         android:onClick="reasetDatabase"
         android:text="Xóa dữ liệu "
-        />
+        />-->
 
 </LinearLayout>

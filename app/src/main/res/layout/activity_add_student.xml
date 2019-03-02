@@ -10,9 +10,8 @@
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:textColor="#8B0000"
         android:textStyle="bold"
-        android:text="Thêm Sinh Viên Vào Lớp"
+        android:text="Thêm Lịch Thi"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="20sp" />
 
@@ -32,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="5dp"
-                android:text="Lớp:"
+                android:text="Môn Học:"
                 android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -57,16 +56,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="Mã sinh viên:"
+                android:text="Phòng:"
                 android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <EditText
                 android:id="@+id/txtStudentID"
-                android:layout_width="match_parent"
+                android:layout_width="383dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Nhập mã sinh viên" >
+                android:ems="10"                >
 
                 <requestFocus />
             </EditText>
@@ -82,15 +80,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold"
-                android:text="Tên sinh viên:"
+                android:text="Ca Thi:"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <EditText
                 android:id="@+id/txtStudentName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Nhập tên sinh viên" />
+                android:ems="10"            />
         </TableRow>
 
         <TableRow
@@ -104,7 +101,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="6dp"
-                android:background="#03A9F4"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:onClick="back"
@@ -115,12 +111,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:background="#6003FC03"
                 android:textStyle="bold"
                 android:onClick="addStudent"
-                android:text="Thêm sinh viên" />
+                android:text="Thêm Thêm lịch Thi" />
         </TableRow>
     </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="STT"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Môn"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Phòng Thi"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ca Thi"/>
+    </LinearLayout>
 
     <ListView
         android:id="@+id/ltvListStudent"

@@ -20,14 +20,14 @@
         <TextView
             android:id="@+id/tvEdu"
             android:layout_margin="8dp"
-            android:drawableTop="@drawable/course_icon"
+            android:drawableTop="@drawable/student"
             android:gravity="center"
             android:text="@string/main_menu_course"/>
 
         <TextView
             android:id="@+id/tvMap"
             android:layout_margin="8dp"
-            android:drawableTop="@drawable/maps_icon"
+            android:drawableTop="@drawable/maps"
             android:gravity="center"
             android:text="@string/main_menu_maps"/>
 
@@ -41,14 +41,14 @@
         <TextView
             android:id="@+id/tvNew"
             android:layout_margin="8dp"
-            android:drawableTop="@drawable/news_icon"
+            android:drawableTop="@drawable/news"
             android:gravity="center"
             android:text="@string/main_menu_news"/>
 
         <TextView
             android:id="@+id/tvSocial"
             android:layout_margin="8dp"
-            android:drawableTop="@drawable/social_icon"
+            android:drawableTop="@drawable/social"
             android:gravity="center"
             android:text="@string/main_menu_social"/>
 
