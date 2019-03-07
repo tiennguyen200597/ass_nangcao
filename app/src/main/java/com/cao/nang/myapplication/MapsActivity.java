@@ -11,9 +11,12 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.cao.nang.myapplication.base.Database;
+import com.cao.nang.myapplication.base.Local;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -22,6 +25,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
@@ -31,6 +35,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private static final int MY_PERMISSIONS_REQUEST_READ_GPS = 999;
     private double longitude, latitude;
+    Database database;
+    ArrayList<Local> arrays;
+    private EditText kinhdo;
+    private EditText vido;
+    private EditText diadiem;
+    private Button them;
+    private Button xoa;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +55,42 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        // tạo đb
+        //tạo database
+        database = new Database(this, "Local.sql", null, 1);
+
+        //Tạo bảng
+        database.QueryData("CREATE TABLE IF NOT EXISTS Local(id INTEGER PRIMARY KEY AUTO INCREMENT, kinhdo float, vido float, diadiem VARCHAR(100))");
+
+        kinhdo = (EditText) findViewById(R.id.kinhdo);
+        vido = (EditText) findViewById(R.id.vido);
+        diadiem = (EditText) findViewById(R.id.diadiem);
+        them = (Button) findViewById(R.id.them);
+        xoa = (Button) findViewById(R.id.xoa);
+        them.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double kd=Double.parseDouble(kinhdo.getText().toString().trim());
+                double vd=Double.parseDouble(vido.getText().toString().trim());
+                if (kinhdo.getText().length()==0||kinhdo.getText().length()<5){
+                    Toast.makeText(MapsActivity.this, "Khong duoc de trong va 5 ki tu", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (vido.getText().length()==0||vido.getText().length()<5){
+                    Toast.makeText(MapsActivity.this, "Khong duoc de trong va 5 ki tu", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (diadiem.getText().length()==0){
+                    Toast.makeText(MapsActivity.this, "dia khong dc de trong", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Local local=new Local(kd,vd,diadiem.getText().toString());
+                arrays.add(local);
+
+
+            }
+        });
 
     }
 

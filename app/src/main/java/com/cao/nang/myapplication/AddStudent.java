@@ -20,7 +20,6 @@ public class AddStudent extends AppCompatActivity implements AdapterView.OnItemS
     Spinner spnListClass;
     EditText txtStudentID, txtStudentName;
     ListView ltvListStudent;
-
     SQLiteDatabase database;
 
     ArrayList<String> list = null;
